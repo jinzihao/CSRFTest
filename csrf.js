@@ -3,3 +3,5 @@ function getCSRFTokens() {
         document.getElementById("csrfTokens").innerHTML = result.csrfTokens;
     });
 }
+
+getCSRFTokens();

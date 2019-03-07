@@ -1,0 +1,17 @@
+{
+  "name": "CSRF Test",
+  "description" : "CSRF Test",
+  "version": "1.0",
+  "browser_action": {
+    "default_popup": "csrf.html",
+    "default_icon": "csrf_extension.png"
+  },
+  "permissions": ["tabs", "storage", "*://*/*"],
+  "content_scripts": [
+    {
+      "matches": ["*://*/*"],
+      "js": ["csrfContentScript.js"]
+    }
+  ],
+  "manifest_version": 2
+}
